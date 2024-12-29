@@ -10,7 +10,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-export function LoginForm({
+export function RegisterForm({
     className,
     ...props
 }: React.ComponentPropsWithoutRef<"div">) {
@@ -18,14 +18,23 @@ export function LoginForm({
         <div className={cn("flex flex-col gap-6", className)} {...props}>
             <Card>
                 <CardHeader>
-                    <CardTitle className="text-2xl">Login</CardTitle>
+                    <CardTitle className="text-2xl">Register Account</CardTitle>
                     <CardDescription>
-                        Enter your email below to login to your account
+                        Create your account
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
                     <form>
                         <div className="flex flex-col gap-6">
+                            <div className="grid gap-2">
+                                <Label htmlFor="username">Username</Label>
+                                <Input
+                                    id="username"
+                                    type="text"
+                                    placeholder="username"
+                                    required
+                                />
+                            </div>
                             <div className="grid gap-2">
                                 <Label htmlFor="email">Email</Label>
                                 <Input
@@ -48,16 +57,16 @@ export function LoginForm({
                                 <Input id="password" type="password" required />
                             </div>
                             <Button type="submit" className="w-full">
-                                Login
+                                Sign Up
                             </Button>
                             <Button variant="outline" className="w-full">
                                 Login with Google
                             </Button>
                         </div>
                         <div className="mt-4 text-center text-sm">
-                            Don&apos;t have an account?{" "}
-                            <a href="/auth/register" className="underline underline-offset-4">
-                                Sign up
+                            have an account?{" "}
+                            <a href="/auth/login" className="underline underline-offset-4">
+                                Sign In
                             </a>
                         </div>
                     </form>
