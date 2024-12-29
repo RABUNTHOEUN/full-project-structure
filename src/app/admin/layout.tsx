@@ -1,5 +1,5 @@
 // src/app/admin/layout.tsx
-import { AppSidebar } from "@/components/app-sidebar"
+import { AppSidebar } from "@/components/admin/app-sidebar"
 import {
     Breadcrumb,
     BreadcrumbItem,

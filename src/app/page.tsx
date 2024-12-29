@@ -1,6 +1,6 @@
 // src/app/page.tsx
 
-import Header from "@/components/client/Header";
+import Header from "@/components/client/header/Header";
 
 export default function HomePage() {
   return (
