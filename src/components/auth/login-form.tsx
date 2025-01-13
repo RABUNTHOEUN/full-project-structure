@@ -19,33 +19,35 @@ export function LoginForm({
 }: React.ComponentPropsWithoutRef<"div">) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
+    // const [error, setError] = useState("");
     const router = useRouter(); // Initialize router from next/navigation
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        router.push("/admin");
 
-        try {
-            // Mock login validation
-            if (email === "admin@gmail.com" && password === "123") {
-                // Simulate API response
-                const user = {
-                    id: "1",
-                    name: "Admin",
-                    email: "admin@gmail.com",
-                };
 
-                // Store user info in localStorage/sessionStorage if needed
-                localStorage.setItem("user", JSON.stringify(user));
+        // try {
+        //     // Mock login validation
+        //     if (email === "admin@gmail.com" && password === "123") {
+        //         // Simulate API response
+        //         const user = {
+        //             id: "1",
+        //             name: "Admin",
+        //             email: "admin@gmail.com",
+        //         };
 
-                // Navigate to dashboard
-                router.push("/admin");
-            } else {
-                throw new Error("Invalid email or password");
-            }
-        } catch (err) {
-            setError(err instanceof Error ? err.message : "An error occurred");
-        }
+        //         // Store user info in localStorage/sessionStorage if needed
+        //         localStorage.setItem("user", JSON.stringify(user));
+
+        //         // Navigate to dashboard
+        //         router.push("/admin");
+        //     } else {
+        //         throw new Error("Invalid email or password");
+        //     }
+        // } catch (err) {
+        //     setError(err instanceof Error ? err.message : "An error occurred");
+        // }
     };
 
     return (
@@ -68,7 +70,7 @@ export function LoginForm({
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     placeholder="m@example.com"
-                                    required
+                                    // required
                                 />
                             </div>
                             <div className="grid gap-2">
@@ -86,10 +88,10 @@ export function LoginForm({
                                     type="password"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
-                                    required
+                                    // required
                                 />
                             </div>
-                            {error && <p className="text-red-500 text-sm">{error}</p>}
+                            {/* {error && <p className="text-red-500 text-sm">{error}</p>} */}
                             <Button type="submit" className="w-full">
                                 Login
                             </Button>
