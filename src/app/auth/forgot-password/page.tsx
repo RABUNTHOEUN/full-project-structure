@@ -32,7 +32,11 @@ export default function ForgotPasswordPage() {
             // Redirect to login page after 2 seconds
             setTimeout(() => router.push("/auth/login"), 2000);
         } catch (err) {
-            setError("Something went wrong. Please try again.");
+            if (err instanceof Error) {
+                setError(err.message);
+            } else {
+                setError("Something went wrong. Please try again.");
+            }
         } finally {
             setLoading(false);
         }

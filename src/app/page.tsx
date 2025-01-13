@@ -1,6 +1,7 @@
 // src/app/page.tsx
 
 import Header from "@/components/client/header/Header";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -63,21 +64,21 @@ export default function HomePage() {
             <h2 className="text-3xl font-semibold mb-6">Our Portfolio</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="bg-gray-200 rounded-lg shadow-md">
-                <img src="/portfolio1.jpg" alt="Portfolio 1" className="w-full h-64 object-cover rounded-t-lg" />
+                <Image src="/portfolio1.jpg" alt="Portfolio 1" className="w-full h-64 object-cover rounded-t-lg" />
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2">Project One</h3>
                   <p className="text-lg">Description of the project goes here. Showcasing our expertise in various domains.</p>
                 </div>
               </div>
               <div className="bg-gray-200 rounded-lg shadow-md">
-                <img src="/portfolio2.jpg" alt="Portfolio 2" className="w-full h-64 object-cover rounded-t-lg" />
+                <Image src="/portfolio2.jpg" alt="Portfolio 2" className="w-full h-64 object-cover rounded-t-lg" />
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2">Project Two</h3>
-                  <p className="text-lg">A brief overview of another successful project we've completed for a client.</p>
+                  <p className="text-lg">A brief overview of another successful project we&#39;ve completed for a client.</p>
                 </div>
               </div>
               <div className="bg-gray-200 rounded-lg shadow-md">
-                <img src="/portfolio3.jpg" alt="Portfolio 3" className="w-full h-64 object-cover rounded-t-lg" />
+                <Image src="/portfolio3.jpg" alt="Portfolio 3" className="w-full h-64 object-cover rounded-t-lg" />
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2">Project Three</h3>
                   <p className="text-lg">A showcase of how our solutions helped our clients achieve their business objectives.</p>
@@ -93,17 +94,17 @@ export default function HomePage() {
             <h2 className="text-3xl font-semibold mb-6">What Our Clients Say</h2>
             <div className="flex justify-center space-x-8">
               <div className="w-1/3 bg-white shadow-md p-6 rounded-lg">
-                <p className="text-lg mb-4">"The team exceeded our expectations. Their work has made a huge impact on our business!"</p>
+                <p className="text-lg mb-4">The team exceeded our expectations. Their work has made a huge impact on our business!</p>
                 <p className="font-semibold">John Doe</p>
                 <p className="text-gray-500">CEO, Example Co.</p>
               </div>
               <div className="w-1/3 bg-white shadow-md p-6 rounded-lg">
-                <p className="text-lg mb-4">"Incredible service and excellent communication throughout the project. Highly recommend!"</p>
+                <p className="text-lg mb-4">Incredible service and excellent communication throughout the project. Highly recommend!</p>
                 <p className="font-semibold">Jane Smith</p>
                 <p className="text-gray-500">Marketing Director, ABC Corp.</p>
               </div>
               <div className="w-1/3 bg-white shadow-md p-6 rounded-lg">
-                <p className="text-lg mb-4">"The results we got from their work were beyond what we hoped for. Fantastic team!"</p>
+                <p className="text-lg mb-4">The results we got from their work were beyond what we hoped for. Fantastic team!</p>
                 <p className="font-semibold">Michael Lee</p>
                 <p className="text-gray-500">Founder, Startup Inc.</p>
               </div>
@@ -115,7 +116,7 @@ export default function HomePage() {
         <section id="contact" className="py-20 bg-blue-700 text-white">
           <div className="max-w-7xl mx-auto px-4 text-center">
             <h2 className="text-3xl font-semibold mb-6">Contact Us</h2>
-            <p className="text-lg mb-6">We'd love to hear from you! Reach out to us for any questions or inquiries.</p>
+            <p className="text-lg mb-6">We&apos;d love to hear from you! Reach out to us for any questions or inquiries.</p>
             <form>
               <input
                 type="email"
