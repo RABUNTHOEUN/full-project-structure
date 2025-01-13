@@ -64,21 +64,21 @@ export default function HomePage() {
             <h2 className="text-3xl font-semibold mb-6">Our Portfolio</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="bg-gray-200 rounded-lg shadow-md">
-                <Image src="/portfolio1.jpg" alt="Portfolio 1" className="w-full h-64 object-cover rounded-t-lg" />
+                <Image src="/portfolio1.jpg" width={500} height={64} alt="Portfolio 1" className="w-full h-64 object-cover rounded-t-lg" />
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2">Project One</h3>
                   <p className="text-lg">Description of the project goes here. Showcasing our expertise in various domains.</p>
                 </div>
               </div>
               <div className="bg-gray-200 rounded-lg shadow-md">
-                <Image src="/portfolio2.jpg" alt="Portfolio 2" className="w-full h-64 object-cover rounded-t-lg" />
+                <Image src="/portfolio2.jpg" width={500} height={64} alt="Portfolio 2" className="w-full h-64 object-cover rounded-t-lg" />
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2">Project Two</h3>
                   <p className="text-lg">A brief overview of another successful project we&#39;ve completed for a client.</p>
                 </div>
               </div>
               <div className="bg-gray-200 rounded-lg shadow-md">
-                <Image src="/portfolio3.jpg" alt="Portfolio 3" className="w-full h-64 object-cover rounded-t-lg" />
+                <Image src="/portfolio3.jpg" width={500} height={64} alt="Portfolio 3" className="w-full h-64 object-cover rounded-t-lg" />
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2">Project Three</h3>
                   <p className="text-lg">A showcase of how our solutions helped our clients achieve their business objectives.</p>
