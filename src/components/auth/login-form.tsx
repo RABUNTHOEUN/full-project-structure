@@ -27,12 +27,12 @@ export function LoginForm({
 
         try {
             // Mock login validation
-            if (email === "admin@example.com" && password === "password123") {
+            if (email === "admin@gmail.com" && password === "123") {
                 // Simulate API response
                 const user = {
                     id: "1",
                     name: "Admin",
-                    email: "admin@example.com",
+                    email: "admin@gmail.com",
                 };
 
                 // Store user info in localStorage/sessionStorage if needed
