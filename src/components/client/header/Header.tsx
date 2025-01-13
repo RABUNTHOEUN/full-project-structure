@@ -6,6 +6,7 @@ export default function Header() {
                 <h1 className="text-2xl font-bold">My Website</h1>
                 <nav>
                     <ul className="flex space-x-8">
+                        <li><a href="/admin" className="hover:text-gray-200">Admin</a></li>
                         <li><a href="#home" className="hover:text-gray-200">Home</a></li>
                         <li><a href="/about" className="hover:text-gray-200">About</a></li>
                         <li><a href="#services" className="hover:text-gray-200">Services</a></li>
